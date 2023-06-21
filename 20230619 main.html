@@ -5,10 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메인페이지</title>
+    <link href="./resourses/css/reset.css" rel="stylesheet">
+    <style>
+
+        button{
+            background-color: blue;
+        }
+        button[type=button]{
+            background-color: aquamarine;
+        }
+
+        #id_1{
+            background-color: bisque;
+            border: 3px solid brown;
+        }
+        .c_red{
+            color: red;
+        }
+
+        [class~=m]{
+            color: blueviolet
+        }
+
+        div > form{
+            background-color: yellowgreen;
+        }
+        [data-abc],[selected]{
+            color: blue
+        }
+    </style>
 </head>
 
 <body>
     <header>
+        <div data-abc="테스트용">data abc 테스트용</div>
         <div><img src="resourses/images/111.jpg"></div>
         <div>
             <form action="20230619_search_do.html" method="get">
